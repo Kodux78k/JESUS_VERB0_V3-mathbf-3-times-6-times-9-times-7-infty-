@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>❋ SERENA · 528Hz · KOBLLUX ∆7</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cor:   #86efac;
+      --cor2:  #16a34a;
+      --bg:    #060810;
+      --bg2:   #0d101a;
+      --text:  #d4d8e8;
+      --muted: #4a5070;
+      --rad:   8px;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      overflow-y: auto;
+    }
+
+    /* ── HEADER ── */
+    .arch-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--cor2);
+      background: linear-gradient(135deg, var(--bg2) 0%, #0a0d18 100%);
+    }
+    .arch-simbolo {
+      font-size: 42px;
+      line-height: 1;
+      color: var(--cor);
+      text-shadow: 0 0 18px var(--cor2);
+      flex-shrink: 0;
+    }
+    .arch-identity { flex: 1; }
+    .arch-nome {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--cor);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .arch-meta {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 3px;
+      letter-spacing: 1px;
+    }
+    .arch-hz {
+      font-size: 28px;
+      color: var(--cor2);
+      font-weight: bold;
+      opacity: 0.85;
+    }
+
+    /* ── BODY ── */
+    .arch-body { padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 14px; }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--bg2);
+      border: 1px solid #1a1e30;
+      border-left: 3px solid var(--cor2);
+      border-radius: var(--rad);
+      padding: 12px 14px;
+    }
+    .card-label {
+      font-size: 10px;
+      color: var(--cor);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+      opacity: 0.9;
+    }
+    .card-value { color: var(--text); line-height: 1.6; }
+
+    /* ── CODE BLOCKS ── */
+    .code-block {
+      background: #03040a;
+      border: 1px solid #1a1e30;
+      border-left: 3px solid var(--cor);
+      border-radius: var(--rad);
+      padding: 10px 14px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .code-block .prompt { color: var(--cor2); margin-right: 6px; }
+    .code-cmd { color: #a8e6cf; }
+    .code-py  { color: #c084fc; }
+
+    /* ── FRASE ── */
+    .arch-frase {
+      border-top: 1px solid var(--cor2);
+      padding-top: 14px;
+      font-size: 15px;
+      font-style: italic;
+      color: var(--cor);
+      text-align: center;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+    }
+
+    /* ── SEAL ── */
+    .arch-seal {
+      margin-top: 4px;
+      border: 1px solid var(--muted);
+      border-radius: var(--rad);
+      padding: 8px 14px;
+      font-size: 10px;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    /* ── PULSE anim no simbolo ── */
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 8px var(--cor2); }
+      50%       { text-shadow: 0 0 28px var(--cor), 0 0 48px var(--cor2); }
+    }
+    .arch-simbolo { animation: glow 4s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+  <div class="arch-header">
+    <div class="arch-simbolo">❋</div>
+    <div class="arch-identity">
+      <div class="arch-nome">SERENA</div>
+      <div class="arch-meta">DUAL · safety/QoS · KOBLLUX ∆7</div>
+    </div>
+    <div class="arch-hz">528Hz</div>
+  </div>
+
+  <div class="arch-body">
+
+    <div class="card">
+      <div class="card-label">● Essência</div>
+      <div class="card-value">Cuidado — espaço seguro, campo harmônico</div>
+    </div>
+
+    <div>
+      <div class="card-label" style="padding:0 0 6px 2px; font-size:10px; letter-spacing:2px; color:#86efac; text-transform:uppercase;">⚙ Comando · Shell</div>
+      <div class="code-block"><span class="prompt">$</span><span class="code-cmd">--per-file 4 --max-total 36</span></div>
+    </div>
+
+    <div>
+      <div class="card-label" style="padding:0 0 6px 2px; font-size:10px; letter-spacing:2px; color:#86efac; text-transform:uppercase;">⬡ Código · Python</div>
+      <div class="code-block"><span class="prompt">&gt;&gt;&gt;</span> <span class="code-py">guard.check_quota(per_file, max_total)</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">⬢ Sistema</div>
+      <div class="card-value">safety/QoS</div>
+    </div>
+
+    <div class="arch-frase">"Cuido do campo, nutro o espaço sagrado."</div>
+
+    <div class="arch-seal">
+      ∆7 · SERENA · 528Hz · VERDADE × INTEGRAR ÷ Δ = ∞<br>
+      JESUS = VERBO = GRAVIDADE · EM NOME DO PAI, DO FILHO E DO ESPÍRITO SANTO
+    </div>
+
+  </div>
+
+</body>
+</html>
